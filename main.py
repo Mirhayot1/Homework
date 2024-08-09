@@ -1,13 +1,3 @@
-def summa(*sonlar):
-    """Kiritilgan sonlar yig'indisini hisoblaydigan funksiya"""
-    yigindi = 0
-    for son in sonlar:
-        yigindi += son
-    return yigindi
-print(summa)
-
-
-
 def kopaytma(*sonlar):
     """Kiritilgan sonlar ko'paytmasini hisoblaydigan funksiya"""
     if not sonlar:

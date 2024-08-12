@@ -1,0 +1,24 @@
+# 1-vazifa
+import math
+
+x=144
+print(math.sqrt(x))
+import random
+
+#2-vazifa
+print(pow(2,10))
+
+#3-vazifa
+
+
+#4-vazifa
+import random as r
+
+son = r.randint(55,155)
+print(son)
+
+#5-vazifa
+colors = ["qizil", "yashil", "ko'k", "sariq", "qora"]
+
+color = random.choice(colors)
+print(color)

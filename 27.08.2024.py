@@ -15,8 +15,20 @@ talaba_json = {"ism":"Hasan","familiya":"Husanov","tyil":2000}
 print(f"{talaba_json['ism']} {talaba_json['familiya']}")
 
 #3 - vazifa
-with open('data','w') as f:
-    json.dump(data,f)
+import json
 
-with open('talaba.json','w') as a:
-    json.dump(talaba_json,a)
+talaba = 'students.json'
+
+with open(talaba, 'r') as file:
+    data = json.load(file)
+
+students = data['student']
+
+
+for student in students:
+    name = student["name"]
+    lastname = student["lastname"]
+    year = student["year"]
+    faculty = student["faculty"]
+    print(f"{name} {lastname}, {year}-kurs, {faculty} talabasi")
+
